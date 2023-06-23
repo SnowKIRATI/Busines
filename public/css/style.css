@@ -1,0 +1,102 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+
+/* -----CSÇS GLOBAL--------- */
+
+img[src*="@2x"] {
+  width: 4px; /* Pour sibler les image qui termin @2x */
+}
+/* -----CSS GENERAL--------- */
+
+body {
+  /* font-family: 'Jua', sans-serif; */
+  letter-spacing: 2px;
+  line-height: 25px;
+    background-image: linear-gradient(
+      rgba(15, 16, 15, 0.412),rgba(239, 4, 4, 0.175)),
+    url(../img/BGtablet.jpg);
+    background-repeat: fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: aliceblue;
+}
+h1{
+  text-transform: uppercase;
+  font-size: 50px;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+h2,
+h3{
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 2;
+}
+h3{
+  background-color: rgba(129, 119, 119, 0.285);
+  border-radius: 10px;
+}
+/* -----CLASS GLOBAL--------- */
+#logo{
+  justify-content: space-between;
+}
+#logo img{
+  width: 40px;
+  aspect-ratio: 1/1;
+  transform: scale(-1,1);
+}
+#zone1 img{
+  width: 100%;
+}
+
+#listeManga img{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* -----CSS PAR SECTION--------- */
+
+
+
+
+
+
+
+
+/* -------Responsive------------ */
+/* Tablet+mobile */
+@media (max-width: 990px) {
+  body {
+    font-family: 'Jua', sans-serif;
+      background-image: linear-gradient(
+        rgba(40, 220, 12, 0.329),rgba(242, 14, 14, 0.404)),
+      url(../img/BGmobile.jpg);
+      background-repeat: fixed;
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      color: aliceblue;
+  }
+  .navbar-nav{
+    align-items: end;
+  }
+  h1,
+  h2,
+  h3{
+    text-align: center;
+  }
+}
+/* -------Mobile------------ */
+
+  /* Pour les Tablet */
+@media only screen and (min-width: 501px) and (max-width: 800px){
+
+}
+  
+  /* Pour les mobile */
+  @media only screen and (max-width: 600px){
+
+  }
+  
